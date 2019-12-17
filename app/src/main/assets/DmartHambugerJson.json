@@ -1,0 +1,213 @@
+{
+    "hamburgerMenu": {
+      "context": {
+        "masterLayoutId": "PASH.1.0.0.0.0.0",
+        "channelType": "APPS"
+      },
+
+
+      "data": {
+        "widgets": [
+          {
+            "context": {
+              "template": "GreetingAndPincodeWidget",
+              "description": "User specific greetings and pincode",
+              "topShadow": "true",
+              "topMargin": "true",
+              "topCurve": "",
+              "url": "/v2/espots/GreetingAndPincodeEspot",
+              "bgColor": "",
+              "bottomShadow": "false",
+              "bottomCurve": ""
+            },
+            "data": {
+              "headerText": "HI, #USERNAME",
+              "descriptionFontColor": "#202020",
+              "headerFontColor": "#00812e",
+              "descriptonText": "#USERPINCODE, Andheri (W) ",
+              "pincode": "1100053",
+              "leftImagePath": "",
+              "rightImagePath": "https://img.dmart.in/images/android/icons/edit-icon.png",
+              "actionUrl": "/pincodeedit"
+            }
+          },
+          {
+            "context": {
+              "template": "PersonalizedMessageWidget",
+              "description": "User specific message",
+              "hyperlinkColor": "#BF3A25",
+              "url": "/v2/espots/PersonalizedMessageEspot",
+              "bgColor": "#F5F5F5",
+              "topShadow": "",
+              "topMargin": "margin_3",
+              "topCurve": "",
+              "bottomShadow": "true",
+              "bottomMargin": "",
+              "bottomCurve": ""
+            },
+            "data": {
+              "eligibleStories": [
+                {
+                  "isEligible": "true",
+                  "titleText": "Your current order is #ORDERID",
+                  "orderId": "1234567",
+                  "subText": "Still you can add more to this order, It is not delivered yet.",
+                  "bottomText": "Learn More",
+                  "actionUrl": "web/https://content.dmart.in/htmls/uat/topuporder.html",
+                  "titleFontColor": "#202020",
+                  "subTextFontColor": "#505050"
+                },
+
+                {
+                  "isEligible": "true",
+                  "titleText": "Your current order is #ORDERID",
+                  "orderId": "1234567",
+                  "subText": "Still you can add more to this order, It is not delivered yet.",
+                  "bottomText": "Learn More",
+                  "actionUrl": "web/https://content.dmart.in/htmls/uat/topuporder.html",
+                  "titleFontColor": "#202020",
+                  "subTextFontColor": "#505050"
+                }
+
+
+
+
+
+
+
+              ]}
+          },
+          {
+            "context": {
+              "template": "DynamicListWidget",
+              "description": "dynamic list",
+              "fontColor": "#FFFFFF",
+              "url": "/v2/espots/HamburgerCategoryEspot",
+              "type": "category",
+              "bgColor": "#3CA664",
+              "topShadow": "true",
+              "topMargin": "",
+              "topCurve": "",
+              "bottomShadow": "true",
+              "bottomMargin": "",
+              "bottomCurve": "",
+              "dividerColor": "#FFFFFF"
+            },
+            "data": {
+              "listCells": [
+                {
+                  "displayText": "SHOP BY CATEGORY ",
+                  "leftImagePath": "",
+                  "rightImagePath": "https://img.dmart.in/images/android/icons/right-arrow.png",
+                  "actionUrl": "/L1Category"
+                }
+
+
+
+
+
+
+              ]
+            }
+          },
+          {
+            "context": {
+              "template": "DynamicListWidget",
+              "description": "dynamic list",
+              "fontColor": "#202020",
+              "url": "/v2/espots/HamburgerDynamicCategoryEspot",
+              "type": "dynamic",
+              "bgColor": "#FFFFFF",
+              "topShadow": "",
+              "topMargin": "",
+              "topCurve": "",
+              "bottomShadow": "",
+              "bottomMargin": "",
+              "bottomCurve": "",
+              "dividerColor": "#CCCCCC"
+            },
+            "data": {
+              "listCells": [
+                {
+                  "displayText": "Rakhi Gift store",
+                  "leftImagePath": "",
+                  "rightImagePath": "https://img.dmart.in/images/android/icons/right-arrow.png",
+                  "actionUrl": "/plp/Rakhi"
+                },
+                {
+                  "displayText": "Deals of the day",
+                  "leftImagePath": "https://img.dmart.in/images/android/icons/shopping-bag-icon.png",
+                  "rightImagePath": "https://img.dmart.in/images/android/icons/right-arrow.png",
+                  "actionUrl": "/plp/dailydeals"
+                },
+                {
+                  "displayText": "Monsoon Offers",
+                  "leftImagePath": "",
+                  "rightImagePath": "https://img.dmart.in/images/android/icons/right-arrow.png",
+                  "actionUrl": "/plp/monsoonoffers"
+                },
+                {
+                  "displayText": "Independence Day Special",
+                  "leftImagePath": "",
+                  "rightImagePath": "https://img.dmart.in/images/android/icons/right-arrow.png",
+                  "actionUrl": "/plp/independenceday"
+                }
+              ]
+            }
+          },
+          {
+            "context": {
+              "template": "DynamicListWidget",
+              "description": "dynamic list",
+              "fontColor": "#353535",
+              "url": "/v2/espots/HamburgerStaticCategoryEspot",
+              "type": "static",
+              "bgColor": "#F1F1F1",
+              "topShadow": "",
+              "topMargin": "",
+              "topCurve": "",
+              "bottomShadow": "",
+              "bottomMargin": "",
+              "bottomCurve": "",
+              "dividerColor": "#CCCCCC"
+            },
+            "data": {
+              "listCells": [
+                {
+                  "displayText": "Pick Up Point List",
+                  "actionUrl": "https://img.dmart.in/images/android/icons/puplist.png",
+                  "leftImagePath": "",
+                  "rightImagePath": ""
+                },
+                {
+                  "displayText": "Customer Care ",
+                  "contactNo": "022-62337171",
+                  "leftImagePath": "",
+                  "rightImagePath": "https://img.dmart.in/images/android/icons/call-icon.png",
+                  "actionUrl": "/customercare"
+                },
+                {
+                  "displayText": "Refund Policy",
+                  "leftImagePath": "",
+                  "rightImagePath": "",
+                  "actionUrl": "statweb/refunds.html"
+                },
+                {
+                  "displayText": "Frequently Asked Questions",
+                  "leftImagePath": "",
+                  "rightImagePath": "",
+                  "actionUrl": "statweb/faq.html"
+                },
+                {
+                  "displayText": "Contact, Terms and Policies",
+                  "leftImagePath": "",
+                  "rightImagePath": "",
+                  "actionUrl": "statweb/privacy.html"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
